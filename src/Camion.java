@@ -2,9 +2,9 @@ public class Camion implements TransportadorMercancias{
     private int capacidadeCarga;
     private int cargaActual;
     private static final int UNIDADCARGA = 30;
-    private int conductor;
+    private String conductor;
 
-    public Camion(int capacidadeCarga, int cargaActual, int conductor) {
+    public Camion(int capacidadeCarga, int cargaActual, String conductor) {
         this.capacidadeCarga = capacidadeCarga;
         this.cargaActual = cargaActual;
         this.conductor = conductor;
@@ -24,5 +24,14 @@ public class Camion implements TransportadorMercancias{
     public double descargar() {
         double descargar = UNIDADCARGA - 1;
         return descargar;
+    }
+
+    @Override
+    public String toString() {
+        return "Camion{" +
+                "capacidadeCarga=" + capacidadeCarga +
+                ", cargaActual=" + cargaActual +
+                ", conductor=" + conductor +
+                '}';
     }
 }

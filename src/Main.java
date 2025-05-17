@@ -9,6 +9,8 @@ public class Main {
         AvionCarga aCa1 = new AvionCarga("Iberia", 64, TipoCombustible.AVGAS, 2456, 1000, 300, "Pedro Gonzalez");
         System.out.println(aCa1.descargar());
         System.out.println(aCa1.cargar());
-
+        Camion cam1 = new Camion(100, 40, "Álvaro Pérez");
+        System.out.println(cam1.cargar());
+        System.out.println(cam1.descargar());
     }
 }
