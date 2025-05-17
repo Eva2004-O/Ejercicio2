@@ -28,5 +28,15 @@ public class Avion extends Vehiculo implements Voador{
     public double maximaDistanciaPercorrer(){
         return consumo * tipoCombustible.getPrezo();
     }
-    
+
+    @Override
+    public String toString() {
+        return "Avion{" +
+                "consumo=" + consumo +
+                ", modelo='" + modelo + '\'' +
+                ", numeroSerie=" + numeroSerie +
+                ", tipoCombustible=" + tipoCombustible +
+                ", cantidadCombustible=" + cantidadCombustible +
+                '}';
+    }
 }
