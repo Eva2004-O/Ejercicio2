@@ -1,7 +1,7 @@
 public abstract class Vehiculo {
     protected String modelo;
     protected int numeroSerie;
-    protected Enum<TipoCombustible> tipoCombustible;
+    protected TipoCombustible tipoCombustible;
     protected double cantidadCombustible;
 
     public Vehiculo(String modelo, int numeroSerie) {
@@ -11,7 +11,7 @@ public abstract class Vehiculo {
         cantidadCombustible = 0;
     }
 
-    public Vehiculo(String modelo, int numeroSerie, Enum<TipoCombustible> tipoCombustible) {
+    public Vehiculo(String modelo, int numeroSerie, TipoCombustible tipoCombustible) {
         this.modelo = modelo;
         this.numeroSerie = numeroSerie;
         this.tipoCombustible = tipoCombustible;
