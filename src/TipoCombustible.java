@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public enum TipoCombustible {
+    JET_A1,
+    AVGAS,
+    GASOLINA,
+    DIESEL;
 
-public interface TipoCombustible {
+
 }
