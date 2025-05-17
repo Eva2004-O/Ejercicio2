@@ -1,6 +1,6 @@
 public interface TransportadorMercancias {
 
-    void cargar();
+    double cargar();
 
-    void descargar();
+    double descargar();
 }
